@@ -97,7 +97,7 @@ class TapTester(object):
             for keyword in ["mic","input"]:
                 if keyword in devinfo["name"].lower():
                     print( "Found an input: device %d - %s"%(i,devinfo["name"]) )
-                    device_index = 12
+                    device_index = i
                     return device_index
 
         if device_index == None:
